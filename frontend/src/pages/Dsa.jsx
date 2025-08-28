@@ -175,7 +175,7 @@ export default function DSA() {
               }}
             >
               <img
-                src="./public/leetcode_avatar.png"
+                src="/leetcode_avatar.png"
                 alt="LeetCode avatar"
                 style={{
                   width: 80,
