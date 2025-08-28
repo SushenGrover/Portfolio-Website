@@ -1,5 +1,5 @@
 // App.jsx
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Academics from "./pages/Academics";
 import Certifications from "./pages/Certifications";
