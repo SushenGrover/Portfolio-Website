@@ -1,0 +1,4 @@
+curl -X POST https://leetcode.com/graphql \
+  -H "Content-Type: application/json" \
+  -H "Referer: https://leetcode.com/" \
+  -d '{"query":"query { matchedUser(username: \"SushenGrover\") { username }}"}'

@@ -1,0 +1,47 @@
+Sl.No,Course Code,Course Title,Course Type,Credits,Grade,Exam Month,Result Declared
+1,BCSE101E,Computer Programming: Python,ETL,3.0,A,Dec-2023,12-Jan-2024
+2,BCSE101N,Introduction to Engineering,PJT,1.0,P,Dec-2023,12-Jan-2024
+3,BEEE102L,Basic Electrical and Electronics Engineering,TH,3.0,S,Dec-2023,12-Jan-2024
+4,BEEE102P,Basic Electrical and Electronics Engineering Lab,LO,1.0,S,Dec-2023,12-Jan-2024
+5,BENG101L,Technical English Communication,TH,2.0,B,Dec-2023,12-Jan-2024
+6,BENG101P,Technical English Communication Lab,LO,1.0,A,Dec-2023,12-Jan-2024
+7,BMAT101L,Calculus,TH,3.0,A,Dec-2023,12-Jan-2024
+8,BMAT101P,Calculus Lab,LO,1.0,A,Dec-2023,12-Jan-2024
+9,BPHY101L,Engineering Physics,TH,3.0,A,Dec-2023,12-Jan-2024
+10,BPHY101P,Engineering Physics Lab,LO,1.0,S,Dec-2023,12-Jan-2024
+11,BSTS201P,Qualitative Skills Practice I,SS,1.5,B,Dec-2023,12-Jan-2024
+12,BCHY101L,Engineering Chemistry,TH,3.0,S,May-2024,12-Jun-2024
+13,BCHY101P,Engineering Chemistry Lab,LO,1.0,S,May-2024,28-May-2024
+14,BCHY102N,Environmental Sciences,OC,2.0,P,May-2024,28-May-2024
+15,BCLE216L,Water Resource Management,TH,3.0,B,May-2024,12-Jun-2024
+16,BCSE102L,Structured and Object-Oriented Programming,TH,2.0,S,May-2024,12-Jun-2024
+17,BCSE102P,Structured and Object-Oriented Programming Lab,LO,2.0,S,May-2024,28-May-2024
+18,BECE102L,Digital Systems Design,TH,3.0,S,May-2024,24-Jun-2024
+19,BECE102P,Digital Systems Design Lab,LO,1.0,S,May-2024,28-May-2024
+20,BENG102P,Technical Report Writing,LO,1.0,A,May-2024,28-May-2024
+21,BMAT102L,Differential Equations and Transforms,TH,4.0,A,May-2024,12-Jun-2024
+22,BSTS101P,Quantitative Skills Practice I,SS,1.5,A,May-2024,28-May-2024
+23,BCSE103E,Computer Programming: Java,ETL,3.0,S,Dec-2024,03-Jan-2025
+24,BCSE202L,Data Structures and Algorithms,TH,3.0,S,Dec-2024,04-Jan-2025
+25,BCSE202P,Data Structures and Algorithms Lab,LO,1.0,S,Dec-2024,03-Jan-2025
+26,BCSE205L,Computer Architecture and Organization,TH,3.0,S,Dec-2024,04-Jan-2025
+27,BCSE303L,Operating Systems,TH,3.0,A,Dec-2024,04-Jan-2025
+28,BCSE303P,Operating Systems Lab,LO,1.0,S,Dec-2024,03-Jan-2025
+29,BECE204L,Microprocessors and Microcontrollers,TH,3.0,S,Dec-2024,04-Jan-2025
+30,BECE204P,Microprocessors and Microcontrollers Lab,LO,1.0,S,Dec-2024,03-Jan-2025
+31,BESP101L,Spanish I,TH,2.0,B,Dec-2024,04-Jan-2025
+32,BMAT201L,Complex Variables and Linear Algebra,TH,4.0,A,Dec-2024,04-Jan-2025
+33,BSTS202P,Qualitative Skills Practice II,SS,1.5,A,Dec-2024,03-Jan-2025
+34,AEXC125N,Job Readiness Skills,ECA,2.0,P,Apr-2025,09-Jun-2025
+35,BCSE203E,Web Programming,ETL,3.0,S,Apr-2025,02-Jun-2025
+36,BCSE204L,Design and Analysis of Algorithms,TH,3.0,S,Apr-2025,02-Jun-2025
+37,BCSE204P,Design and Analysis of Algorithms Lab,LO,1.0,S,Apr-2025,20-May-2025
+38,BCSE304L,Theory of Computation,TH,3.0,A,Apr-2025,02-Jun-2025
+39,BCSE308L,Computer Networks,TH,3.0,B,Apr-2025,02-Jun-2025
+40,BCSE308P,Computer Networks Lab,LO,1.0,S,Apr-2025,20-May-2025
+41,BCSE408L,Cloud Computing,TH,3.0,B,Apr-2025,02-Jun-2025
+42,BMAT202L,Probability and Statistics,TH,3.0,A,Apr-2025,09-Jun-2025
+43,BMAT202P,Probability and Statistics Lab,LO,1.0,S,Apr-2025,20-May-2025
+44,BSSC101N,Essence of Traditional Knowledge,OC,2.0,P,Apr-2025,20-May-2025
+45,BSTS102P,Quantitative Skills Practice II,SS,1.5,A,Apr-2025,20-May-2025
+46,CFOC642M,Conservation Economics,OC,3.0,S,Apr-2025,13-Jun-2025
