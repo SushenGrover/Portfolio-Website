@@ -25,6 +25,7 @@ export default function Certifications() {
 
   return (
     <section className="bg-gray-900 py-12 px-4 md:px-12">
+      <h2 className="text-3xl font-extrabold text-blue-500 mb-4">Certifications</h2>
       <div className="grid gap-8">
         {certifications.map((c, idx) => (
           <div key={c.id} className="relative w-full" variants={cardVariants}>

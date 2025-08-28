@@ -1,6 +1,6 @@
 // src/pages/Academics.jsx
 import React, { useEffect, useState } from "react";
-import { cgpaDetails } from "../components/cgpa_details";
+import { cgpaDetails } from "../components/CGPA_details";
 import { curriculumDetails } from "../components/Curriculum_details";
 
 function GradientCard({ children }) {
@@ -153,7 +153,7 @@ export default function Academics() {
       {/* // CGPA Details table */}
 
       <h2
-        className="text-white"
+        className="text-blue-500"
         style={{ fontSize: 28, fontWeight: 700, marginBottom: 16 }}
       >
         CGPA Details
@@ -226,7 +226,7 @@ export default function Academics() {
 
       <br />
       <h2
-        className="text-white"
+        className="text-blue-500"
         style={{ fontSize: 28, fontWeight: 700, marginBottom: 16 }}
       >
         Grade History
@@ -336,7 +336,7 @@ export default function Academics() {
       </div>
       <br />
       <h2
-        className="text-white"
+        className="text-blue-500"
         style={{ fontSize: 28, fontWeight: 700, marginBottom: 16 }}
       >
         Curriculum Details

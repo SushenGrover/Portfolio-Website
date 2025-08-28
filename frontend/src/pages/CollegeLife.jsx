@@ -63,7 +63,7 @@ function HtmlBlock({ html }) {
 export default function CollegeLife() {
   return (
     <section className="bg-gray-900 mx-auto px-5 py-12">
-      <h2 className="text-3xl font-extrabold text-white mb-4">College Life</h2>
+      <h2 className="text-3xl font-extrabold text-blue-500 mb-4">College Life</h2>
 
       {/* Intro */}
 <GradientCard>

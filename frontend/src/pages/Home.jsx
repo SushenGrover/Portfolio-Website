@@ -26,10 +26,10 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl">
               Hello,
               <br />
-              I&apos;m <span className="font-bold whitespace-nowrap">Sushen Grover</span>
+              I&apos;m <span className="font-bold whitespace-nowrap text-blue-400">Sushen Grover</span>
             </h1>
 
-            <p className="mt-4 italic text-white-400 text-base max-w-md">
+            <p className="mt-4 italic text-blue-200 text-base max-w-md">
               “Consistency will always have the last laugh.”
             </p>
 

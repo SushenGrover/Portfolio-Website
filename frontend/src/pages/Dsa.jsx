@@ -84,7 +84,7 @@ function GradientCard({ children, title }) {
         >
           {title && (
             <div className="px-5 py-4 border-b border-[rgba(120,200,255,0.25)]">
-              <h3 className="m-0 text-xl font-bold text-white">{title}</h3>
+              <h3 className="m-0 text-xl font-bold text-blue-400">{title}</h3>
             </div>
           )}
           <div className="p-[18px] text-white">{children}</div>
@@ -139,7 +139,7 @@ export default function DSA() {
       className="academics-wrapper bg-gray-900"
       style={{ margin: "0 auto", padding: "48px 20px" }}
     >
-      <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 16, color:"white" }}>
+      <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 16}} className="text-blue-500">
         LeetCode
       </h2>
 
@@ -186,7 +186,7 @@ export default function DSA() {
                   background: "rgba(20,24,32,0.6)",
                 }}
               />
-              <div>
+              <div className="text-blue-300">
                 <div style={{ fontSize: 20, fontWeight: 700 }}>
                   Sushen Grover • @SushenGrover
                 </div>
@@ -222,7 +222,7 @@ export default function DSA() {
           </GradientCard>
 
                     <GradientCard title="Badges">
-            <div
+            <div className="text-blue-300"
               style={{
                 display: "flex",
                 flexWrap: "wrap",

@@ -42,6 +42,7 @@ function Projects() {
 
   return (
     <div className="projects-container p-5 bg-gray-900">
+      <h2 className="text-3xl font-extrabold text-blue-500 mb-4">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((proj, idx) => (
           <div key={idx} className="card p-6 rounded shadow bg-gray-800">
