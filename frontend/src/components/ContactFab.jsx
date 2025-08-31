@@ -109,7 +109,7 @@ export default function ContactFab() {
               <div className="h-[3px] w-full from-blue-500 via-cyan-400 to-purple-500 opacity-80" />
               <button
                 onClick={() => setOpen(false)}
-                className="absolute top-3 right-3 h-9 w-9 grid place-items-center rounded-full text-slate-300 text-2xl hover:text-white hover:bg-white/10"
+                className="absolute top-3 right-3 h-9 w-9 grid place-items-center text-align-center align-middle rounded-full text-blue-300 text-2xl hover:font-bold hover:bg-white/10"
                 aria-label="Close"
               >
                 ×
@@ -150,7 +150,8 @@ export default function ContactFab() {
 
                   <button
                     disabled={sending}
-                    className="mt-2 bg-cyan-600 hover:bg-cyan-500 rounded px-4 py-2 font-semibold disabled:opacity-60"
+                    className="mt-2 inline-block bg-blue-600 hover:bg-blue-500 rounded-3xl px-5 py-2 font-semibold 
+             disabled:opacity-60 hover:shadow-[0_0_12px_4px_rgba(59,130,246,0.4)]"
                   >
                     {sending ? "Sending…" : "Send"}
                   </button>

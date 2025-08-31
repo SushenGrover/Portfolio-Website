@@ -28,7 +28,7 @@ export default function Home() {
               Hello,
               <br />
               I&apos;m{" "}
-              <span className="font-bold whitespace-nowrap text-blue-400">
+              <span className="font-bold whitespace-nowrap bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                 Sushen Grover
               </span>
             </h1>
@@ -70,53 +70,22 @@ export default function Home() {
         {/* Description */}
         <div className="space-y-6 px-4">
           <p className="text-[#D7F2FE] text-lg leading-relaxed text-justify">
-            Hello, I&apos;m Sushen Grover, a Computer Science and Engineering
-            student at VIT Chennai with a strong curiosity for how technology
-            shapes the world around us. My journey in this field has been guided
-            by a blend of structured learning and self-driven exploration. Over
-            time, I have built proficiency in multiple programming languages
-            including Python, Java, C, and C++, which form the backbone of my
-            technical foundation. I am also skilled in applying Data Structures
-            and Algorithms to solve complex problems with efficiency and
-            precision. Alongside coding, I have developed a keen interest in
-            Data Analytics, where I use tools like MySQL, Tableau, R, and
-            Spreadsheets to uncover patterns and transform raw information into
-            actionable insights. These skills allow me to bridge the gap between
-            technical rigor and real-world applications, making technology not
-            just a tool, but a medium for solving meaningful problems.
+            Hello, I'm Sushen Grover, a Computer Science and Engineering student
+            at VIT Chennai with a strong curiosity for how technology shapes the
+            world around us. My journey in this field has been guided by a blend
+            of structured learning and self-driven exploration.
           </p>
           <p className="text-[#D7F2FE] text-lg leading-relaxed text-justify">
             Beyond the technical side, I place great value on the mindset I
             bring to my work. I am someone who believes in maintaining a calm,
             quiet, and no-noise approach to challenges, regardless of the
-            environment. While others may feel pressured in high-stakes or
-            fast-paced situations, I&apos;ve learned to remain composed and
-            focus on the task at hand without distraction or panic. This quality
-            not only helps me analyze problems with clarity but also ensures I
-            can collaborate effectively without contributing unnecessary noise.
-            I&apos;m not driven by the need to stand out through volume;
-            instead, I prefer to let the quality of my work speak for itself. I
-            believe that the ability to remain steady under pressure is as
-            important as technical expertise, since it shapes how problems are
-            solved and how teams function in demanding scenarios. In every
-            situation, I aim to bring stability, thoughtfulness, and
-            reliability.
+            environment.
           </p>
           <p className="text-[#D7F2FE] text-lg leading-relaxed text-justify">
             At the heart of my professional and personal outlook is a
             forward-looking attitude. I believe growth comes from adaptability,
             and I continuously strive to expand my knowledge by embracing new
-            technologies, tools, and ideas. Whether it&apos;s refining a piece
-            of code, analyzing a dataset, or exploring emerging fields like
-            artificial intelligence and blockchain, I enjoy the process of
-            learning and applying knowledge to real-world contexts. My focus has
-            always been on consistency, sincerity, and precision, which guide
-            the way I approach both individual projects and collaborative
-            efforts. I see myself not just as a developer or an analyst, but as
-            a problem-solver who is motivated by the opportunity to make an
-            impact—quietly but effectively. With every challenge, I aim to
-            combine technical depth, a calm mindset, and forward vision to build
-            solutions that truly matter.
+            technologies, tools, and ideas.
           </p>
         </div>
       </div>
