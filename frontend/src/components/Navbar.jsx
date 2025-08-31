@@ -51,7 +51,7 @@ function Navbar() {
           </button>
 
           {/* Desktop navigation */}
-          <div className="hidden md:flex md:w-full md:justify-between text-lg font-medium">
+          <div className="hidden md:flex md:w-full md:justify-between text-lg font-medium pr-4 pl-4">
             {navItems.map((item) => {
               const isActive = location.pathname === item.path;
               console.log(location.pathname, item.path, isActive);
