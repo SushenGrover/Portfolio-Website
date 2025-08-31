@@ -20,17 +20,20 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col">
       {/* Main unified container for hero and description */}
-      <div className="max-w-6xl mx-auto px-20 py-16 flex flex-col gap-10">
+      <div className="max-w-6xl mx-auto px-5 md:px-20 py-12 md:py-16 flex flex-col gap-8 md:gap-10">
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row items-center md:items-center justify-center gap-10 md:gap-20">
           <div className="flex-1 text-center md:text-left space-y-5 md:max-w-xl">
             <h1 className="text-4xl md:text-5xl">
               Hello,
               <br />
-              I&apos;m <span className="font-bold whitespace-nowrap text-blue-400">Sushen Grover</span>
+              I&apos;m{" "}
+              <span className="font-bold whitespace-nowrap text-blue-400">
+                Sushen Grover
+              </span>
             </h1>
 
-            <p className="mt-4 italic text-blue-200 text-base max-w-md">
+            <p className="mt-4 italic text-blue-200 text-base max-w-md mx-auto md:mx-0">
               “Consistency will always have the last laugh.”
             </p>
 
@@ -53,27 +56,67 @@ export default function Home() {
           </div>
 
           <div className="flex-1 flex justify-center md:justify-end">
-            <div className="relative w-64 h-64">
+            <div className="relative w-48 h-48 md:w-64 md:h-64">
               <div className="absolute inset-0 rounded-full border-4 border-blue-400 shadow-[0_0_10px_7px_rgba(95,165,250,0.6)] blur-lg" />
               <img
                 src={profilePhoto}
                 alt="My Profile"
-                className="w-64 h-64 object-cover rounded-full border-4 border-blue-500 shadow-lg relative z-10"
+                className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-blue-500 shadow-lg relative z-10"
               />
             </div>
           </div>
         </div>
 
         {/* Description */}
-        <div className="space-y-6">
+        <div className="space-y-6 px-4">
           <p className="text-[#D7F2FE] text-lg leading-relaxed text-justify">
-            Hello, I&apos;m Sushen Grover, a Computer Science and Engineering student at VIT Chennai with a strong curiosity for how technology shapes the world around us. My journey in this field has been guided by a blend of structured learning and self-driven exploration. Over time, I have built proficiency in multiple programming languages including Python, Java, C, and C++, which form the backbone of my technical foundation. I am also skilled in applying Data Structures and Algorithms to solve complex problems with efficiency and precision. Alongside coding, I have developed a keen interest in Data Analytics, where I use tools like MySQL, Tableau, R, and Spreadsheets to uncover patterns and transform raw information into actionable insights. These skills allow me to bridge the gap between technical rigor and real-world applications, making technology not just a tool, but a medium for solving meaningful problems.
+            Hello, I&apos;m Sushen Grover, a Computer Science and Engineering
+            student at VIT Chennai with a strong curiosity for how technology
+            shapes the world around us. My journey in this field has been guided
+            by a blend of structured learning and self-driven exploration. Over
+            time, I have built proficiency in multiple programming languages
+            including Python, Java, C, and C++, which form the backbone of my
+            technical foundation. I am also skilled in applying Data Structures
+            and Algorithms to solve complex problems with efficiency and
+            precision. Alongside coding, I have developed a keen interest in
+            Data Analytics, where I use tools like MySQL, Tableau, R, and
+            Spreadsheets to uncover patterns and transform raw information into
+            actionable insights. These skills allow me to bridge the gap between
+            technical rigor and real-world applications, making technology not
+            just a tool, but a medium for solving meaningful problems.
           </p>
           <p className="text-[#D7F2FE] text-lg leading-relaxed text-justify">
-            Beyond the technical side, I place great value on the mindset I bring to my work. I am someone who believes in maintaining a calm, quiet, and no-noise approach to challenges, regardless of the environment. While others may feel pressured in high-stakes or fast-paced situations, I&apos;ve learned to remain composed and focus on the task at hand without distraction or panic. This quality not only helps me analyze problems with clarity but also ensures I can collaborate effectively without contributing unnecessary noise. I&apos;m not driven by the need to stand out through volume; instead, I prefer to let the quality of my work speak for itself. I believe that the ability to remain steady under pressure is as important as technical expertise, since it shapes how problems are solved and how teams function in demanding scenarios. In every situation, I aim to bring stability, thoughtfulness, and reliability.
+            Beyond the technical side, I place great value on the mindset I
+            bring to my work. I am someone who believes in maintaining a calm,
+            quiet, and no-noise approach to challenges, regardless of the
+            environment. While others may feel pressured in high-stakes or
+            fast-paced situations, I&apos;ve learned to remain composed and
+            focus on the task at hand without distraction or panic. This quality
+            not only helps me analyze problems with clarity but also ensures I
+            can collaborate effectively without contributing unnecessary noise.
+            I&apos;m not driven by the need to stand out through volume;
+            instead, I prefer to let the quality of my work speak for itself. I
+            believe that the ability to remain steady under pressure is as
+            important as technical expertise, since it shapes how problems are
+            solved and how teams function in demanding scenarios. In every
+            situation, I aim to bring stability, thoughtfulness, and
+            reliability.
           </p>
           <p className="text-[#D7F2FE] text-lg leading-relaxed text-justify">
-            At the heart of my professional and personal outlook is a forward-looking attitude. I believe growth comes from adaptability, and I continuously strive to expand my knowledge by embracing new technologies, tools, and ideas. Whether it&apos;s refining a piece of code, analyzing a dataset, or exploring emerging fields like artificial intelligence and blockchain, I enjoy the process of learning and applying knowledge to real-world contexts. My focus has always been on consistency, sincerity, and precision, which guide the way I approach both individual projects and collaborative efforts. I see myself not just as a developer or an analyst, but as a problem-solver who is motivated by the opportunity to make an impact—quietly but effectively. With every challenge, I aim to combine technical depth, a calm mindset, and forward vision to build solutions that truly matter.
+            At the heart of my professional and personal outlook is a
+            forward-looking attitude. I believe growth comes from adaptability,
+            and I continuously strive to expand my knowledge by embracing new
+            technologies, tools, and ideas. Whether it&apos;s refining a piece
+            of code, analyzing a dataset, or exploring emerging fields like
+            artificial intelligence and blockchain, I enjoy the process of
+            learning and applying knowledge to real-world contexts. My focus has
+            always been on consistency, sincerity, and precision, which guide
+            the way I approach both individual projects and collaborative
+            efforts. I see myself not just as a developer or an analyst, but as
+            a problem-solver who is motivated by the opportunity to make an
+            impact—quietly but effectively. With every challenge, I aim to
+            combine technical depth, a calm mindset, and forward vision to build
+            solutions that truly matter.
           </p>
         </div>
       </div>
@@ -158,7 +201,8 @@ export default function Home() {
 
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight">
-                      Resume <span className="text-cyan-400">— PDF Preview</span>
+                      Resume{" "}
+                      <span className="text-cyan-400">— PDF Preview</span>
                     </h3>
                     <a
                       href="https://drive.google.com/file/d/1WZxj_qhvasipggZ82ER4mEO4cwj3MTGe/view?usp=sharing"
@@ -181,7 +225,8 @@ export default function Home() {
 
                   {/* Fallback message */}
                   <p className="mt-3 text-sm text-slate-300">
-                    If the preview doesn’t load, click “Open in new tab” above to view or download the PDF.
+                    If the preview doesn’t load, click “Open in new tab” above
+                    to view or download the PDF.
                   </p>
                 </div>
               </div>

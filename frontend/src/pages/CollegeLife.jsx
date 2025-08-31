@@ -59,69 +59,66 @@ function HtmlBlock({ html }) {
   );
 }
 
-
 export default function CollegeLife() {
   return (
     <section className="bg-gray-900 mx-auto px-5 py-12">
-      <h2 className="text-3xl font-extrabold text-blue-500 mb-4">College Life</h2>
+      <h2 className="text-3xl font-extrabold text-blue-500 mb-4">
+        College Life
+      </h2>
 
       {/* Intro */}
-<GradientCard>
-  <div className="p-5 sm:p-6">
-    <HtmlBlock html={collegeIntro} />
-  </div>
-</GradientCard>
+      <GradientCard>
+        <div className="p-5 sm:p-6">
+          <HtmlBlock html={collegeIntro} />
+        </div>
+      </GradientCard>
 
       {/* Semester cards */}
-{semesters.map((sem, i) => {
-  const reverse = i % 2 === 1;
+      {semesters.map((sem, i) => {
+        const reverse = i % 2 === 1;
 
-  return (
-    <GradientCard key={sem.id}>
-      <div className="p-5 md:p-7">
-        <div
-          className={`flex flex-col md:gap-8
+        return (
+          <GradientCard key={sem.id}>
+            <div className="p-5 md:p-7">
+              <div
+                className={`flex flex-col md:gap-8
             ${reverse ? "md:flex-row-reverse" : "md:flex-row"} 
-            md:items-center`}   // <-- center vertically at md+
-        >
-          {/* Image column */}
-          <div className="flex-shrink-0">
-            {sem.img ? (
-              <div className="overflow-hidden rounded-xl border border-[rgba(120,200,255,0.25)] w-[260px]">
-                <img
-                  src={sem.img}
-                  alt={`${sem.title} highlight`}
-                  className="w-full aspect-square object-cover"
-                  loading="lazy"
-                />
-              </div>
-            ) : null}
-          </div>
+            md:items-center`} // <-- center vertically at md+
+              >
+                {/* Image column */}
+                <div className="flex-shrink-0">
+                  {sem.img ? (
+                    <div className="overflow-hidden rounded-xl border border-[rgba(120,200,255,0.25)] w-full max-w-[260px] mx-auto md:w-[260px]">
+                      <img
+                        src={sem.img}
+                        alt={`${sem.title} highlight`}
+                        className="w-full aspect-square object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                  ) : null}
+                </div>
 
-          {/* Text column */}
-          <div className="flex-1 mt-5 md:mt-0">
-            <div className="flex items-start gap-3 mb-3">
-              <h3 className="text-2xl text-blue-400 md:text-3xl font-extrabold leading-tight">
-                {sem.title}
-              </h3>
-              <div className="ml-auto">
-                <GpaPill gpa={sem.gpa} />
+                {/* Text column */}
+                <div className="flex-1 mt-5 md:mt-0">
+                  <div className="flex items-start gap-3 mb-3">
+                    <h3 className="text-2xl text-blue-400 md:text-3xl font-extrabold leading-tight">
+                      {sem.title}
+                    </h3>
+                    <div className="ml-auto">
+                      <GpaPill gpa={sem.gpa} />
+                    </div>
+                  </div>
+
+                  <p className="text-[16px] text-blue-200 leading-7 opacity-90 text-justify">
+                    {sem.paragraph}
+                  </p>
+                </div>
               </div>
             </div>
-
-            <p className="text-[16px] text-blue-200 leading-7 opacity-90 text-justify">
-              {sem.paragraph}
-            </p>
-          </div>
-        </div>
-      </div>
-    </GradientCard>
-  );
-})}
-
-
-
-
+          </GradientCard>
+        );
+      })}
     </section>
   );
 }

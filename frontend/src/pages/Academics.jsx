@@ -146,10 +146,7 @@ export default function Academics() {
   }, []);
 
   return (
-    <section
-      className="academics-wrapper bg-gray-900 min-h-screen"
-      style={{ margin: "0 auto", padding: "48px 20px" }}
-    >
+    <section className="academics-wrapper bg-gray-900 min-h-screen px-4 md:px-20 py-8 md:py-12">
       {/* // CGPA Details table */}
 
       <h2

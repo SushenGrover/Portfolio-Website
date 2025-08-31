@@ -44,7 +44,7 @@ function Projects() {
   return (
     <div className="projects-container p-5 min-h-screen bg-gray-900 text-white flex flex-col">
       <h2 className="text-3xl font-extrabold text-blue-500 mb-4">Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-0">
         {projects.map((proj, idx) => (
           <div key={idx} className="card p-6 rounded shadow bg-gray-800">
             <h2 className="text-xl text-blue-400 font-bold">{proj.name}</h2>
@@ -52,7 +52,7 @@ function Projects() {
             <p className="text-blue-300 mt-1 text-justify">
               {proj.description}
             </p>
-            <div className="flex gap-3 mt-5">
+            <div className="flex flex-wrap gap-3 mt-5">
               <button
                 className="bg-blue-600 hover:bg-blue-500 py-2 px-6 text-white rounded cursor-pointer"
                 onClick={() => fetchReadme(proj.githubRepo, proj.name)}

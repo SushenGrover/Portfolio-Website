@@ -133,10 +133,7 @@ export default function DSA() {
   }, []);
 
   return (
-    <section
-      className="academics-wrapper bg-gray-900 min-h-screen"
-      style={{ margin: "0 auto", padding: "48px 20px" }}
-    >
+    <section className="academics-wrapper bg-gray-900 min-h-screen px-4 md:px-20 py-8 md:py-12">
       <h2
         style={{ fontSize: 28, fontWeight: 700, marginBottom: 16 }}
         className="text-blue-500"
@@ -169,14 +166,7 @@ export default function DSA() {
         <>
           {/* Profile header */}
           <GradientCard>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "80px 1fr",
-                gap: 16,
-                alignItems: "center",
-              }}
-            >
+            <div className="flex flex-col gap-4 md:grid md:grid-cols-[80px_1fr] md:gap-16 md:items-center">
               <img
                 src="/leetcode_avatar.png"
                 alt="LeetCode avatar"
@@ -188,8 +178,9 @@ export default function DSA() {
                   objectFit: "cover",
                   background: "rgba(20,24,32,0.6)",
                 }}
+                className="mx-auto md:mx-0"
               />
-              <div className="text-blue-300">
+              <div className="text-blue-300 text-center md:text-left">
                 <div style={{ fontSize: 20, fontWeight: 700 }}>
                   Sushen Grover • @SushenGrover
                 </div>
@@ -231,7 +222,7 @@ export default function DSA() {
                 display: "flex",
                 flexWrap: "wrap",
                 gap: 24,
-                justifyContent: "left",
+                justifyContent: "center",
               }}
             >
               {badges.length > 0 ? (
@@ -275,14 +266,7 @@ export default function DSA() {
 
           {/* Stats pills */}
           <GradientCard title="Problem Stats">
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: 10,
-                alignItems: "stretch",
-              }}
-            >
+            <div className="flex flex-wrap gap-4 justify-center">
               <StatPill label="Solved" value={stats.allSolved} />
               <StatPill
                 label={`Easy`}

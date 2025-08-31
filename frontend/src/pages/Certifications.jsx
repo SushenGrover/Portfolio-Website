@@ -24,8 +24,10 @@ export default function Certifications() {
   };
 
   return (
-    <section className="bg-gray-900 py-12 px-4 md:px-12">
-      <h2 className="text-3xl font-extrabold text-blue-500 mb-4">Certifications</h2>
+    <section className="bg-gray-900 py-8 px-4 md:py-12 md:px-12">
+      <h2 className="text-3xl font-extrabold text-blue-500 mb-4">
+        Certifications
+      </h2>
       <div className="grid gap-8">
         {certifications.map((c, idx) => (
           <div key={c.id} className="relative w-full" variants={cardVariants}>
@@ -50,10 +52,10 @@ export default function Certifications() {
               variants={cardVariants}
               className="relative bg-gradient-to-b from-gray-800 via-gray-900 to-gray-800 rounded-2xl shadow-lg p-6 md:p-8 overflow-hidden"
             >
-              <div className="flex md:flex-row flex-col items-center md:items-start gap-6">
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                 {/* Clickable Badge Image */}
                 <div
-                  className="w-40 h-40 md:w-48 md:h-48 rounded-xl overflow-hidden border border-cyan-400/30 flex-shrink-0 cursor-pointer"
+                  className="w-32 h-32 md:w-48 md:h-48 rounded-xl overflow-hidden border border-cyan-400/30 flex-shrink-0 cursor-pointer"
                   onClick={() => openImageModal(c.image, c.name)}
                 >
                   <div className="relative w-full h-full">
