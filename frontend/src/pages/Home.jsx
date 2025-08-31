@@ -1,3 +1,4 @@
+// frontend\src\pages\Home.jsx
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import profilePhoto from "../assets/profile_photo.png";

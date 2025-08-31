@@ -1,3 +1,4 @@
+// frontend\src\componenets\Home.jsx
 import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {

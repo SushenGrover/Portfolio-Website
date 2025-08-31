@@ -26,7 +26,6 @@ const GlowSpinner = () => (
   </div>
 );
 
-
 // A simple, reusable component for displaying individual stats.
 function StatPill({ label, value }) {
   return (
@@ -52,7 +51,7 @@ function StatPill({ label, value }) {
 // A styled container card for different sections.
 function GradientCard({ children, title }) {
   return (
-    <div className="relative w-full mb-6">
+    <div className="relative w-full mb-6 ">
       {/* Animated gradient border ring */}
       <div
         className="
@@ -133,25 +132,29 @@ export default function DSA() {
     };
   }, []);
 
-
   return (
-<section
-      className="academics-wrapper bg-gray-900"
+    <section
+      className="academics-wrapper bg-gray-900 min-h-screen"
       style={{ margin: "0 auto", padding: "48px 20px" }}
     >
-      <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 16}} className="text-blue-500">
+      <h2
+        style={{ fontSize: 28, fontWeight: 700, marginBottom: 16 }}
+        className="text-blue-500"
+      >
         LeetCode
       </h2>
 
-{loading ? (
-  <GradientCard>
-    <div className="flex flex-col items-center gap-3">
-      <GlowSpinner />
-      <div className="text-cyan-200/90">Fetching LeetCode profile…</div>
-      <div className="text-slate-300/80 text-sm">Usually ~3-5 seconds</div>
-    </div>
-  </GradientCard>
-) : err ? (
+      {loading ? (
+        <GradientCard>
+          <div className="flex flex-col items-center gap-3">
+            <GlowSpinner />
+            <div className="text-cyan-200/90">Fetching LeetCode profile…</div>
+            <div className="text-slate-300/80 text-sm">
+              May take longer than usual ~5-20 seconds
+            </div>
+          </div>
+        </GradientCard>
+      ) : err ? (
         <GradientCard>
           <div style={{ color: "#fca5a5" }}>
             Error: {err}. Ensure the profile is public and the backend is
@@ -221,8 +224,9 @@ export default function DSA() {
             </div>
           </GradientCard>
 
-                    <GradientCard title="Badges">
-            <div className="text-blue-300"
+          <GradientCard title="Badges">
+            <div
+              className="text-blue-300"
               style={{
                 display: "flex",
                 flexWrap: "wrap",
@@ -234,7 +238,9 @@ export default function DSA() {
                 badges.map((badge) => (
                   <div
                     key={badge.id}
-                    title={`${badge.name}\nEarned: ${new Date(badge.creationDate * 1000).toLocaleDateString()}`}
+                    title={`${badge.name}\nEarned: ${new Date(
+                      badge.creationDate * 1000
+                    ).toLocaleDateString()}`}
                     style={{
                       display: "flex",
                       flexDirection: "column",
@@ -260,7 +266,9 @@ export default function DSA() {
                   </div>
                 ))
               ) : (
-                <div style={{textAlign: 'center', width: '100%'}}>No badges earned yet.</div>
+                <div style={{ textAlign: "center", width: "100%" }}>
+                  No badges earned yet.
+                </div>
               )}
             </div>
           </GradientCard>
