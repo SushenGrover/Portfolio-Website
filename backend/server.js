@@ -10,7 +10,7 @@ const HOST = process.env.HOST || "0.0.0.0";
 app.use(
   cors({
     // origin: "http://localhost:5173", // local testing URL
-    origin: "https://sushengrover.onrender.com/", // render frontend URL
+    origin: "https://sushengrover.onrender.com", // render frontend URL
   })
 );
 
