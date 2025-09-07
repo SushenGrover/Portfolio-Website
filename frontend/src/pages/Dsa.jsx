@@ -256,7 +256,7 @@ export default function DSA() {
                 display: "flex",
                 flexWrap: "wrap",
                 gap: 24,
-                justifyContent: "left",
+                justifyContent: "center",
               }}
             >
               {badges.length > 0 ? (
@@ -313,7 +313,7 @@ export default function DSA() {
 
           {/* Stats pills */}
           <GradientCard title="Problem Stats">
-            <div className="flex flex-wrap gap-4 justify-left">
+            <div className="flex flex-wrap gap-4 justify-center">
               <StatPill label="Solved" value={stats.allSolved} />
               <StatPill
                 label={`Easy`}
