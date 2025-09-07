@@ -1,0 +1,15 @@
+
+@hostname = http://127.0.0.1:5000
+@username = SushenGrover
+
+GET {{hostname}}/
+
+###
+# Get LeetCode stats for a valid user
+# EXPECTED: 200 OK with a JSON body containing stats, recent submissions, and badges.
+GET {{hostname}}/leetcode/{{username}}
+
+###
+# Test with a username that does not exist to check error handling
+# EXPECTED: 404 Not Found with a JSON error message.
+GET {{hostname}}/leetcode/a-user-that-does-not-exist-12345

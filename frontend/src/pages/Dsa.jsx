@@ -1,10 +1,10 @@
-// frontend/src/pages/DSA.jsx
 import React, { useEffect, useState } from "react";
 
 // IMPORTANT: Replace with your actual LeetCode username
 const USERNAME = "SushenGrover";
 // Use environment variables for API base URL in a real application
 const API_BASE = "https://portfolio-website-rgpj.onrender.com";
+// const API_BASE = "http://localhost:5000";
 
 import { motion } from "framer-motion";
 
@@ -107,12 +107,17 @@ export default function DSA() {
         const res = await fetch(`${API_BASE}/leetcode/${USERNAME}`);
         if (!res.ok) throw new Error(`Backend HTTP ${res.status}`);
         const data = await res.json();
+        console.log(data);
         if (data.error) throw new Error(data.detail);
 
         if (alive) {
+          const sortedBadges = (data.badges || []).sort(
+            (a, b) => new Date(a.creationDate) - new Date(b.creationDate)
+          );
+
           setStats(data.stats || null);
           setRecent(data.recent || []);
-          setBadges(data.badges || []);
+          setBadges(sortedBadges);
         }
       } catch (e) {
         if (alive) {
@@ -138,7 +143,7 @@ export default function DSA() {
         style={{ fontSize: 28, fontWeight: 700, marginBottom: 16 }}
         className="text-blue-500"
       >
-        LeetCode
+        LeetCode&nbsp;Profile
       </h2>
 
       {loading ? (
@@ -166,31 +171,59 @@ export default function DSA() {
         <>
           {/* Profile header */}
           <GradientCard>
-            <div className="flex flex-col gap-4 md:grid md:grid-cols-[80px_1fr] md:gap-16 md:items-center">
+            {/* --- START OF UI UPDATE --- */}
+            <div className="flex flex-col md:flex-row items-center justify-left gap-6 md:gap-10 text-center md:text-left p-4">
               <img
-                src="/leetcode_avatar.png"
+                src={"/leetcode_avatar.png"}
                 alt="LeetCode avatar"
-                style={{
-                  width: 80,
-                  height: 80,
-                  borderRadius: 12,
-                  border: "0px solid rgba(120,200,255,0.25)",
-                  objectFit: "cover",
-                  background: "rgba(20,24,32,0.6)",
-                }}
-                className="mx-auto md:mx-0"
+                className="w-24 h-24 md:w-30 md:h-30 rounded-full object-cover bg-gray-800 border-2 border-cyan-400/50 shadow-lg shrink-0"
               />
-              <div className="text-blue-300 text-center md:text-left">
-                <div style={{ fontSize: 20, fontWeight: 700 }}>
-                  Sushen Grover • @SushenGrover
+              <div className="flex flex-col items-center md:items-start">
+                <h3 className="text-2xl font-bold text-blue-300">
+                  Sushen&nbsp;Grover{" "}
+                  <span className="opacity-70 font-normal text-lg">
+                    • @{stats.username}
+                  </span>
+                </h3>
+
+                <div className="mt-4 flex flex-wrap gap-6 justify-center md:justify-start">
+                  <div>
+                    <div className="text-2xl font-bold text-cyan-400">
+                      {parseInt(
+                        (stats.totalSubmissions * 100) / stats.acceptanceRate
+                      )}
+                    </div>
+                    <div className="text-xs opacity-75 uppercase tracking-wider">
+                      Total
+                      <br />
+                      Submissions
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-cyan-400">
+                      {stats.totalSubmissions}
+                    </div>
+                    <div className="text-xs opacity-75 uppercase tracking-wider">
+                      Accepted
+                      <br />
+                      Submissions
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-cyan-400">
+                      {stats.acceptanceRate}%
+                    </div>
+                    <div className="text-xs opacity-75 uppercase tracking-wider">
+                      Acceptance
+                      <br />
+                      Rate
+                    </div>
+                  </div>
                 </div>
-                <div style={{ opacity: 0.85 }}>
-                  Rank: <b>{stats.ranking}</b>
-                  {stats.country !== "N/A" ? ` • ${stats.country}` : ""}
-                </div>
-                <div className="mt-3">
+
+                <div className="mt-5">
                   <a
-                    href="https://leetcode.com/u/SushenGrover/"
+                    href={`https://leetcode.com/u/${USERNAME}/`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-5 py-2 rounded-lg font-semibold text-gray-900 bg-gradient-to-b from-cyan-400 to-cyan-500 shadow-md hover:from-cyan-500 hover:to-cyan-600 transition"
@@ -213,6 +246,7 @@ export default function DSA() {
                 </div>
               </div>
             </div>
+            {/* --- END OF UI UPDATE --- */}
           </GradientCard>
 
           <GradientCard title="Badges">
@@ -222,7 +256,7 @@ export default function DSA() {
                 display: "flex",
                 flexWrap: "wrap",
                 gap: 24,
-                justifyContent: "center",
+                justifyContent: "left",
               }}
             >
               {badges.length > 0 ? (
@@ -230,7 +264,7 @@ export default function DSA() {
                   <div
                     key={badge.id}
                     title={`${badge.name}\nEarned: ${new Date(
-                      badge.creationDate * 1000
+                      badge.creationDate
                     ).toLocaleDateString()}`}
                     style={{
                       display: "flex",
@@ -251,8 +285,21 @@ export default function DSA() {
                         filter: "drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5))",
                       }}
                     />
-                    <span style={{ fontSize: 12, opacity: 0.9 }}>
+                    <span
+                      style={{ fontSize: 12, opacity: 0.9, fontWeight: 500 }}
+                    >
                       {badge.name}
+                    </span>
+                    <span
+                      style={{ fontSize: 11, opacity: 0.7, marginTop: "-4px" }}
+                    >
+                      {new Date(badge.creationDate).toLocaleDateString(
+                        "en-US",
+                        {
+                          month: "short",
+                          year: "numeric",
+                        }
+                      )}
                     </span>
                   </div>
                 ))
