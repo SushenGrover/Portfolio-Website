@@ -331,7 +331,7 @@ export default function DSA() {
           </GradientCard>
 
           {/* Recent AC submissions */}
-          <GradientCard title="Recent Accepted Submissions">
+          <GradientCard title="Recent Submissions">
             <div style={{ overflowX: "auto" }}>
               <table
                 style={{
