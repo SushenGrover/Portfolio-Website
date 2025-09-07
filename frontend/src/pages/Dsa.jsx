@@ -313,7 +313,7 @@ export default function DSA() {
 
           {/* Stats pills */}
           <GradientCard title="Problem Stats">
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-wrap gap-4 justify-left">
               <StatPill label="Solved" value={stats.allSolved} />
               <StatPill
                 label={`Easy`}
