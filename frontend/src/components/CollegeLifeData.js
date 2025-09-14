@@ -1,8 +1,8 @@
 // components/CollegeLifeData.js
 export const collegeIntro = `
-<p>August 13, 2023 — the day I stepped into VIT Chennai with two bags, a restless mind, and a heart full of possibilities. After two years of studying within four walls at home, this felt like my first real step into the wider world. My mantra was clear: "Build yourself." Build a version of me that no challenge, failure, or distraction could shake.</p>
-<p>The campus was alive with new faces, new voices, and new rhythms. At first, it felt like walking into the middle of a story already in progress, but slowly the pieces started to fit. Friendships formed, routines took shape, and opportunities opened up in directions I had never imagined.</p>
-<p>That flight to Chennai wasn’t just about changing cities—it was the beginning of a new chapter. Every day since has been about growing, creating, and moving forward with purpose.</p>
+<p>August 13, 2023. I arrived at VIT Chennai with two bags, a restless mind, and a heart full of dreams—my biggest leap after years of being confined to online classes at home. That day, I carried one mantra with me: "Build yourself." Build a version of me that no challenge, no failure, and no noise could shake.</p>
+<p>The campus felt like another world. New faces, new voices, a completely new culture—at first, it was overwhelming, like being dropped into the middle of a story already in progress. But slowly, the chaos turned into rhythm. Friendships formed, routines emerged, and opportunities started to reveal themselves in unexpected ways.</p>
+<p>That flight wasn’t just a trip between cities—it was a leap into a new chapter. Since then, every day has been about adapting, learning, and reminding myself why I came: to grow, to create, and to keep moving forward.</p>
 `;
 
 export const semesters = [
@@ -11,7 +11,7 @@ export const semesters = [
     title: "Semester 1: The Beginning",
     img: "/college_life_images/1.jpg",
     paragraph:
-      "The first semester was like opening the first page of an unfamiliar book. Everything around me felt fresh—new people, new ideas, and a completely different pace of life. I gravitated towards the library, where I found both quiet and curiosity. Those countless hours among books gave me direction and confidence. By the end of the semester, the nervous newcomer had turned into someone ready to take on the road ahead.",
+      "The first semester was a true test of courage. Coming from a small town, everything felt bigger, faster, and more polished than what I was used to. Starting a simple conversation seemed like a huge step, and fluent English speakers felt out of reach. But I kept trying, one small step at a time. The library became my sanctuary—my place to learn, grow, and gain confidence. I spent countless hours there until even the warden knew me by name. Those struggles became the foundation that made me stronger, more confident, and ready for the journey ahead.",
     gpa: "9.08",
   },
   {
@@ -19,7 +19,7 @@ export const semesters = [
     title: "Semester 2: Finding My Path",
     img: "/college_life_images/2.jpg",
     paragraph:
-      "By the second semester, I had settled into campus life and began exploring my real interests. A turning point came with my first serious coding course. Until then, programming was just a basic skill—I soon realized it could be a passion. Logic and problem-solving started to excite me, and web development became a side hobby that kept pulling me in. This semester was about discovery, laying the foundation for the coder I was becoming.",
+      "By the second semester, I was more at home on campus, but the competition grew sharper. Surrounded by talented peers, relative grading pushed me to stay consistent. My turning point came with the first serious coding course. What began as a subject quickly became a passion—logic and problem-solving started to excite me, and I found myself diving into web development on the side. This was the semester where curiosity transformed into direction, and my path toward becoming a developer started to take shape.",
     gpa: "9.42",
   },
   {
@@ -27,7 +27,7 @@ export const semesters = [
     title: "Semester 3: Intensity & Growth",
     img: "/college_life_images/3.jpg",
     paragraph:
-      "The third semester raised the tempo. With packed schedules, labs, and challenging subjects like Microprocessors, Java, DSA, and Computer Architecture, every day demanded focus. I also joined three clubs, keeping my calendar buzzing with activity. Despite the intensity, coding remained my anchor. The highlight of the semester was my first hackathon experience—where our team unexpectedly finished as runners-up. It was proof that effort and curiosity can open unexpected doors.",
+      "The pace picked up dramatically in the third semester. With challenging subjects like Microprocessors, Java, DSA, and Computer Architecture, paired with a packed schedule of classes, labs, and club activities, every day tested my endurance. But programming remained my anchor—it gave me stability and confidence. This was also the semester of my first hackathon, where I experienced the thrill of competing and the joy of finishing as runners-up. That moment proved that perseverance and curiosity could open doors I never expected.",
     gpa: "9.51",
   },
   {
@@ -35,7 +35,7 @@ export const semesters = [
     title: "Semester 4: Resilience Tested",
     img: "/college_life_images/4.jpg",
     paragraph:
-      "The fourth semester was a true test of resilience. Falling sick meant I had to face the unusual challenge of reappearing for six exams in just two days. It was exhausting, but it taught me the importance of staying calm under pressure. Alongside academics, I earned my Google Data Analytics Certification, adding a strong edge to my analytical skills. I also worked on meaningful projects, applying concepts to real-world problems. This semester shaped my ability to stay composed and deliver, no matter the circumstances.",
+      "The fourth semester tested me in ways I had never imagined. Chickenpox forced me into isolation room for 1 week, making me miss all midterm exams. What followed was a marathon of six re-exams in just two days—a physically and mentally draining experience. But I pushed through, proving to myself that I could handle pressure. Alongside this, I earned my Google Data Analytics Certification, adding depth to my skill set, and worked on impactful projects. This semester became a story of resilience, adaptability, and turning setbacks into stepping stones.",
     gpa: "9.24",
   },
   {
@@ -43,7 +43,7 @@ export const semesters = [
     title: "Semester 5: Ongoing Journey",
     img: "/college_life_images/5.jpg",
     paragraph:
-      "Semester 5 is still unfolding—a chapter in progress. With advanced courses, projects, and practical challenges, it’s another step in building both knowledge and character. Every day brings something new to learn, create, or refine, and the story continues.",
+      "Semester 5 is still being written. With new projects, advanced topics, and practical challenges, it’s another chance to grow both academically and personally. Each day is a reminder that the journey is ongoing, and every challenge is an opportunity to learn and build further.",
     gpa: "NA",
   },
 ];
