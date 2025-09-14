@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 // IMPORTANT: Replace with your actual LeetCode username
 const USERNAME = "SushenGrover";
 // Use environment variables for API base URL in a real application
-const API_BASE = "https://portfolio-website-rgpj.onrender.com";
-// const API_BASE = "http://localhost:5000";
+// const API_BASE = "https://portfolio-website-rgpj.onrender.com";
+const API_BASE = "http://localhost:5000";
 
 import { motion } from "framer-motion";
 
@@ -110,13 +110,36 @@ export default function DSA() {
         console.log(data);
         if (data.error) throw new Error(data.detail);
 
+        // --- AFTER ---
         if (alive) {
+          // Filter for the latest submission of each unique problem
+          const recentSubmissions = data.recent || [];
+          const uniqueSubmissionsMap = recentSubmissions.reduce(
+            (acc, submission) => {
+              const existingSubmission = acc[submission.titleSlug];
+              // If we haven't seen this problem before, or if the current submission is newer, update it
+              if (
+                !existingSubmission ||
+                submission.timestamp > existingSubmission.timestamp
+              ) {
+                acc[submission.titleSlug] = submission;
+              }
+              return acc;
+            },
+            {}
+          );
+
+          // Convert the map back to an array and sort by timestamp (newest first)
+          const filteredRecent = Object.values(uniqueSubmissionsMap).sort(
+            (a, b) => b.timestamp - a.timestamp
+          );
+
           const sortedBadges = (data.badges || []).sort(
             (a, b) => new Date(a.creationDate) - new Date(b.creationDate)
           );
 
           setStats(data.stats || null);
-          setRecent(data.recent || []);
+          setRecent(filteredRecent); // Use the new, filtered array
           setBadges(sortedBadges);
         }
       } catch (e) {
