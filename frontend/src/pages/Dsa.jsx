@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 // IMPORTANT: Replace with your actual LeetCode username
 const USERNAME = "SushenGrover";
 // Use environment variables for API base URL in a real application
-// const API_BASE = "https://portfolio-website-rgpj.onrender.com";
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://portfolio-website-rgpj.onrender.com";
+// const API_BASE = "http://localhost:5000";
 
 import { motion } from "framer-motion";
 
