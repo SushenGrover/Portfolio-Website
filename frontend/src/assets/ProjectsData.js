@@ -1,6 +1,15 @@
 // src/projectsData.js
 export const projects = [
   {
+    name: "Healytics: Chronic Care Patient Deterioration Predictor",
+    oneliner: "",
+    description:
+      "Healytics is an AI-powered risk prediction engine designed to forecast the 90-day deterioration risk for chronic care patients. Leveraging patient vitals, lab results, and adherence data, it uses XGBoost and SHAP explainability to deliver accurate, interpretable predictions. The clinician-friendly React dashboard displays color-coded risk scores, highlights high-risk patients, and provides detailed patient trends with actionable insights. By enabling proactive interventions, Healytics aims to reduce preventable hospitalizations and improve patient outcomes. This solution blends advanced machine learning with intuitive visualization, empowering healthcare providers to make informed, timely decisions in chronic patient care management.",
+    githubRepo: "SushenGrover/hackwell2",
+    githubUrl: "https://github.com/SushenGrover/hackwell2",
+    deployment: null,
+  },
+  {
     name: "IntelliClause: AI-Powered Insurance Policy Q&A",
     oneliner:
       "Secure, real-time and peer-to-peer (P2P) file sharing with AES Encryption.",
