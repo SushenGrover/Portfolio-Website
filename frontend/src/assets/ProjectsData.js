@@ -1,6 +1,27 @@
 // src/projectsData.js
 export const projects = [
   {
+    name: "VAAHAN",
+    oneliner: "",
+    description:
+      "VAAHAN is a fully serverless cloud-native vehicle rental platform built using AWS services including Lambda, API Gateway, DynamoDB, SNS, S3, CloudFront, and Cognito. It provides secure authentication, real-time vehicle listing, automated booking notifications, and a React-based frontend with IBM Watson chatbot integration.",
+    githubRepo: "SushenGrover/VAAHAN-aws-based-vehicle-rental-platform",
+    githubUrl:
+      "https://github.com/SushenGrover/VAAHAN-aws-based-vehicle-rental-platform",
+    deployment: null,
+  },
+  {
+    name: "EnergySim Marketplace",
+    oneliner: "",
+    description:
+      "EnergySim Marketplace is a blockchain-based peer-to-peer energy trading simulation. It uses Solidity smart contracts for tokenized energy and carbon credits, Flask + Web3.py as backend, and React for the frontend dashboard. Users can exchange tokens transparently in a decentralized ecosystem.",
+    githubRepo:
+      "SushenGrover/hackwell2SushenGrover/Energy-and-Carbon-Credit-Trading-Marketplace",
+    githubUrl:
+      "https://github.com/SushenGrover/Energy-and-Carbon-Credit-Trading-Marketplace",
+    deployment: null,
+  },
+  {
     name: "Healytics: Chronic Care Patient Deterioration Predictor",
     oneliner: "",
     description:
