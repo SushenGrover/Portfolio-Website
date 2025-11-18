@@ -8,7 +8,7 @@ export const projects = [
     githubRepo: "SushenGrover/VAAHAN-aws-based-vehicle-rental-platform",
     githubUrl:
       "https://github.com/SushenGrover/VAAHAN-aws-based-vehicle-rental-platform",
-    deployment: null,
+    deployment: "https://d2y5ak3q65zpz1.cloudfront.net/",
   },
   {
     name: "EnergySim Marketplace",
@@ -21,16 +21,16 @@ export const projects = [
     deployment: null,
   },
   {
-    name: "Healytics: Chronic Care Patient Deterioration Predictor",
+    name: "Healytics",
     oneliner: "",
     description:
       "Healytics is an AI-powered engine using XGBoost and SHAP to predict the 90-day deterioration risk for chronic patients. It analyzes vitals, labs, and adherence data for accurate, interpretable results. A clinician-friendly React dashboard displays color-coded risk scores, highlights high-risk patients, and provides detailed trends with actionable insights. This enables proactive interventions, aiming to reduce preventable hospitalizations and improve patient outcomes.",
     githubRepo: "SushenGrover/hackwell2",
     githubUrl: "https://github.com/SushenGrover/hackwell2",
-    deployment: null,
+    deployment: "https://hackwell-roan.vercel.app/",
   },
   {
-    name: "IntelliClause: AI-Powered Insurance Policy Q&A",
+    name: "IntelliClause",
     oneliner:
       "Secure, real-time and peer-to-peer (P2P) file sharing with AES Encryption.",
     description:
