@@ -15,8 +15,7 @@ export const projects = [
     oneliner: "",
     description:
       "EnergySim Marketplace is a blockchain-based peer-to-peer energy trading simulation. It uses Solidity smart contracts for tokenized energy and carbon credits, Flask + Web3.py as backend, and React for the frontend dashboard. Users can exchange tokens transparently in a decentralized ecosystem.",
-    githubRepo:
-      "SushenGrover/hackwell2SushenGrover/Energy-and-Carbon-Credit-Trading-Marketplace",
+    githubRepo: "SushenGrover/Energy-and-Carbon-Credit-Trading-Marketplace",
     githubUrl:
       "https://github.com/SushenGrover/Energy-and-Carbon-Credit-Trading-Marketplace",
     deployment: null,
