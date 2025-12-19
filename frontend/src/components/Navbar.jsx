@@ -12,7 +12,7 @@ function Navbar() {
     { path: "/projects", label: "Projects", color: "blue" },
     { path: "/certifications", label: "Certifications", color: "blue" },
     { path: "/collegelife", label: "College Life", color: "blue" },
-    { path: "/academics", label: "Academics", color: "blue" },
+    { path: "/design", label: "Design", color: "blue" },
     { path: "/dsa", label: "DSA", color: "blue" },
   ];
 

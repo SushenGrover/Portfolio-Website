@@ -68,7 +68,7 @@ export default function Home() {
         </div>
 
         {/* Description */}
-        <div className="space-y-6 px-4">
+        <div className="space-y-6 px-0">
           <p className="text-[#D7F2FE] text-lg leading-relaxed text-justify">
             Hello, I'm Sushen Grover, a Computer Science and Engineering student
             at VIT Chennai with a strong curiosity for how technology shapes the
@@ -79,13 +79,10 @@ export default function Home() {
             Beyond the technical side, I place great value on the mindset I
             bring to my work. I am someone who believes in maintaining a calm,
             quiet, and no-noise approach to challenges, regardless of the
-            environment.
-          </p>
-          <p className="text-[#D7F2FE] text-lg leading-relaxed text-justify">
-            At the heart of my professional and personal outlook is a
-            forward-looking attitude. I believe growth comes from adaptability,
-            and I continuously strive to expand my knowledge by embracing new
-            technologies, tools, and ideas.
+            environment. At the heart of my professional and personal outlook is
+            a forward-looking attitude. I believe growth comes from
+            adaptability, and I continuously strive to expand my knowledge by
+            embracing new technologies, tools, and ideas.
           </p>
         </div>
       </div>
