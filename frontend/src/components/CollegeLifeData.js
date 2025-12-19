@@ -41,7 +41,7 @@ export const semesters = [
   {
     id: 5,
     title: "Semester 5: Ongoing Journey",
-    img: "/college_life_images/5.jpg",
+    img: "/college_life_images/5.jpeg",
     paragraph:
       "Semester 5 is still being written. With new projects, advanced topics, and practical challenges, it’s another chance to grow both academically and personally. Each day is a reminder that the journey is ongoing, and every challenge is an opportunity to learn and build further.",
     gpa: "NA",
