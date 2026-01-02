@@ -43,7 +43,7 @@ export const semesters = [
     title: "Semester 5: A Bad Deal",
     img: "/college_life_images/5.jpeg",
     paragraph:
-      "Semester 5 delivered a humbling reality check. My GPA dipped to 8.47 - my lowest point yet a stark contrast to my previous consistency. While the number stung, it was the cost of a deliberate shift from textbooks to the trenches. I poured my energy into finding internships and built projects. I traded perfection for practical experience, and the sacrifice paid off with a confirmed internship offer at BluMotiv and but stole that 0.2 from my CGPA. I've learned that growth isn't always a straight line, and I am fully prepared to bounce back stronger than ever.",
+      "Semester 5 delivered a humbling reality check. My GPA dipped to 8.47 - my lowest point yet a stark contrast to my previous consistency. While the number stung, it was the cost of a deliberate shift from textbooks to the trenches. I poured my energy into finding internships and built projects. I chose practical experience over absolute perfection, and that decision paid off with a confirmed internship at BluMotiv, though it came at the cost of a 0.2 dip in my CGPA. I've learned that growth isn't always a straight line, and I am fully prepared to bounce back stronger than ever.",
     gpa: "8.47",
   },
 ];
