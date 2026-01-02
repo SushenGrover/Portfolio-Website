@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
 import ContactFab from "./components/ContactFab";
+import Internships from "./pages/Internships";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/dsa" element={<Dsa />} />
+        <Route path="/internships" element={<Internships />} />
       </Routes>
       <ContactFab />
       <Footer />
