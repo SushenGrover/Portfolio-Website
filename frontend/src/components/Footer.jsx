@@ -1,10 +1,6 @@
 // frontend/src/components/Footer.jsx
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPhone,
-  faEnvelope,
-  faHeart,
-} from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
@@ -71,13 +67,11 @@ export default function Footer() {
           <div className="w-24 h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full opacity-70"></div>
 
           {/* Footer Note */}
-          <div className="text-gray-400 text-base text-center">
-            <span className="inline-flex items-center gap-2">
-              Made with
-              <FontAwesomeIcon icon={faHeart} className="text-red-500" />
-              by <span className="font-bold text-gray-200">Sushen</span>
-            </span>
-          </div>
+          <p className="text-gray-400 text-sm text-center tracking-wide">
+            Designed & Developed by{" "}
+            <span className="font-semibold text-gray-200">Sushen Grover</span>{" "}
+            &copy; {new Date().getFullYear()}
+          </p>
         </div>
 
         {/* Portfolio Repo Link - smaller & cornered */}
