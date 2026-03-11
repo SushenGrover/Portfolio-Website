@@ -5,7 +5,7 @@ export const projects = [
     oneliner: "",
     description:
       "A lightweight real-time collaborative spreadsheet application built with Next.js, TypeScript, Tailwind CSS, and Firebase. It supports live multi-user editing, a custom formula engine, presence indicators, and optimistic syncing. Features include cell formatting, keyboard navigation, undo/redo, export to CSV/XLSX, and virtualized rendering for performance, enabling smooth collaboration and efficient spreadsheet management directly in the browser.",
-    githubRepo: "SushenGrover/SheetSync",
+    githubRepo: "SushenGrover/trademarkia-frontend",
     githubUrl: "https://github.com/SushenGrover/trademarkia-frontend",
     deployment: "https://trademarkia-frontend-omega.vercel.app/",
   },
