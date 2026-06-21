@@ -4,7 +4,6 @@ import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
-  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
@@ -42,11 +41,6 @@ export default function Footer() {
                 href: "https://www.linkedin.com/in/sushen-grover-2b3314290/",
                 icon: faLinkedin,
                 label: "LinkedIn",
-              },
-              {
-                href: "https://www.instagram.com/sushen.grover/",
-                icon: faInstagram,
-                label: "Instagram",
               },
             ].map((item, i) => (
               <a

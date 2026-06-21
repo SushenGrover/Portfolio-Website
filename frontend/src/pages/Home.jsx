@@ -38,7 +38,7 @@ export default function Home() {
             </p>
 
             <h2 className="text-xl md:text-1xl text-gray-300 font-semibold">
-              <span className="text-blue-300">Software Development</span> |{" "}
+              <span className="text-blue-300">Software Engineering</span> |{" "}
               <span className="text-cyan-300">Artificial Intelligence</span> |{" "}
               <span className="text-purple-300">Data Science</span>
             </h2>

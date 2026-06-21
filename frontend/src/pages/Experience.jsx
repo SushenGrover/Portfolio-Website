@@ -1,6 +1,6 @@
-// src/pages/Internships.jsx
+// src/pages/Experience.jsx
 import React, { useState } from "react";
-import { internships } from "../components/InternshipData";
+import { experiences } from "../components/ExperienceData";
 import { motion } from "framer-motion";
 
 const cardVariants = {
@@ -12,7 +12,7 @@ const cardVariants = {
   }),
 };
 
-export default function Internships() {
+export default function Experience() {
   const [showModal, setShowModal] = useState(false);
   const [modalImage, setModalImage] = useState("");
   const [modalTitle, setModalTitle] = useState("");
@@ -27,12 +27,12 @@ export default function Internships() {
   return (
     <section className="bg-gray-900 py-8 px-4 md:py-12 md:px-12">
       <h2 className="text-3xl font-extrabold text-blue-500 mb-4">
-        Internships
+        Experience
       </h2>
       <div className="grid gap-8">
-        {internships.map((internship, idx) => (
+        {experiences.map((experience, idx) => (
           <div
-            key={internship.id}
+            key={experience.id}
             className="relative w-full"
             variants={cardVariants}
           >
@@ -64,27 +64,27 @@ export default function Internships() {
                   {/* Company Logo */}
                   <div className="w-32 h-32 md:w-40 md:h-40 rounded-xl overflow-hidden bg-white border-3 border-cyan-400/80 flex items-center justify-center">
                     <img
-                      src={internship.companyLogo}
-                      alt={`${internship.company} Logo`}
+                      src={experience.companyLogo}
+                      alt={`${experience.company} Logo`}
                       className="w-full h-full object-contain"
                       loading="lazy"
                     />
                   </div>
 
                   {/* Certificate Preview (Only if finished/available) */}
-                  {internship.certificate && (
+                  {experience.certificate && (
                     <div
                       className="w-32 md:w-40 group cursor-pointer"
                       onClick={() =>
                         openImageModal(
-                          internship.certificate,
-                          `${internship.company} Certificate`
+                          experience.certificate,
+                          `${experience.company} Certificate`
                         )
                       }
                     >
                       <div className="relative rounded-lg overflow-hidden border border-cyan-400/30">
                         <img
-                          src={internship.certificate}
+                          src={experience.certificate}
                           alt="Certificate"
                           className="w-full h-24 object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                         />
@@ -102,28 +102,29 @@ export default function Internships() {
                 <div className="flex-1 grid gap-3">
                   <div>
                     <h3 className="text-xl md:text-2xl font-bold text-white">
-                      {internship.role}
+                      {experience.role}
                     </h3>
                     <p className="text-cyan-200 text-sm md:text-base mt-1">
                       <span className="font-semibold text-lg">
-                        {internship.company}
+                        {experience.company}
                       </span>
                       <span className="mx-2">•</span>
-                      {internship.location}
+                      {experience.location}
                       <span className="mx-2">•</span>
                       <span className="text-blue-300">
-                        {internship.startDate} - {internship.endDate}
+                        {experience.startDate} - {experience.endDate}
                       </span>
                     </p>
                   </div>
 
-                  <p className="text-gray-200 text-justify leading-relaxed text-sm md:text-base border-l-2 border-cyan-500/50 pl-4">
-                    {internship.description}
-                  </p>
+                  <p
+                    className="text-gray-200 text-justify leading-relaxed text-sm md:text-base border-l-2 border-cyan-500/50 pl-4"
+                    dangerouslySetInnerHTML={{ __html: experience.description }}
+                  />
 
                   {/* Skills */}
                   <div className="flex flex-wrap gap-2 mt-2">
-                    {internship.skills.map((s) => (
+                    {experience.skills.map((s) => (
                       <span
                         key={s}
                         className="text-xs md:text-sm px-3 py-1 rounded-full bg-cyan-400/20 border border-cyan-400/30 text-cyan-100 whitespace-nowrap"

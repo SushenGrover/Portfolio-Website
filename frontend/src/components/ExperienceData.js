@@ -1,0 +1,83 @@
+// src/components/ExperienceData.js
+
+export const experiences = [
+  {
+    id: 1,
+    role: "Research Intern",
+    company: "VIT University",
+    companyLogo: "/internship_images/vit_logo.png",
+    location: "Remote",
+    startDate: "May 2026",
+    endDate: "Present",
+    description:
+      "Working under <b>Dr. Janaki Meena</b> on the design and development of <b>HybridRAG architectures</b>, exploring advanced retrieval techniques including <b>GraphRAG, VectorRAG, reranking, query decomposition, and RAG fusion</b> to enhance knowledge retrieval and response generation.",
+    skills: [
+      "Python",
+      "Neo4j",
+      "GraphRAG",
+      "VectorRAG",
+      "RAG Fusion",
+      "Query Decomposition",
+      "HYDE",
+      "Ragas",
+      "Cross Encoder",
+    ],
+    certificate: "",
+  },
+  {
+    id: 2,
+    role: "Data Researcher Intern",
+    company: "Collegedunia",
+    companyLogo: "/internship_images/collegedunia_logo.png",
+    location: "Remote",
+    startDate: "May 2026",
+    endDate: "Present",
+    description:
+      "Building code implementations for questions featured in <b>national-level examinations</b>, enabling the creation of <b>accurate and scalable educational content</b> published on official website of CollegeDunia.",
+    skills: [
+      "Python",
+      "Regular Expression",
+      "Artificial Intelligence",
+      "Latex",
+      "Prompt Engineering",
+      "Web Scraping",
+      "Data Engineering",
+    ],
+    certificate: "",
+  },
+  {
+    id: 4,
+    role: "Software Development Intern",
+    company: "BluMotiv",
+    companyLogo: "/internship_images/blumotiv_logo.jpg",
+    location: "Remote",
+    startDate: "Jan 2026",
+    endDate: "Apr 2026",
+    description:
+      "Completed an internship at <b>BluMotiv</b>, contributing to the development of <b>fleet management software</b> for electrified industrial vehicles. Designed and implemented a <b>driver behavior classification model</b> to identify driving styles and evaluate their effects on fuel consumption and vehicle efficiency. Worked with real-world vehicle data to support data-driven decision-making and improve operational performance.",
+    skills: [
+      "Software Development",
+      "AI/ML",
+      "Fleet Management",
+      "Python",
+      "FastAPI",
+      "Kafka",
+      "SQL",
+      "React",
+    ],
+    certificate: "/internship_images/blumotiv_certificate.jpg",
+  },
+  {
+    id: 3,
+    role: "Data Analytics Intern",
+    company: "Vodafone Idea Foundation",
+    companyLogo: "/internship_images/vois_logo.png",
+    location: "Remote",
+    startDate: "Sep 2025",
+    endDate: "Oct 2025",
+    description:
+      "Completed a specialized virtual internship focused on '<b>Conversational Data Analysis with LLMs</b>' led by the Edunet Foundation. I utilized Python libraries like <b>Pandas, NumPy, and Seaborn</b> to perform end-to-end data analytics. Key achievements included analyzing genre trends in <b>Netflix content</b> and identifying pricing drivers for <b>Airbnb bookings</b>, transforming raw data into actionable insights.",
+    skills: ["Python", "Pandas", "LLMs", "Data Visualization", "Seaborn"],
+    certificate: "/internship_images/vois_certificate.jpg",
+  },
+];

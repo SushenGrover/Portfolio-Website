@@ -1,30 +1,26 @@
 // App.jsx
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Academics from "./pages/Academics";
-import Design from "./pages/Design";
 import Certifications from "./pages/Certifications";
-import CollegeLife from "./pages/CollegeLife";
-import Dsa from "./pages/Dsa";
+import Journey from "./pages/Journey";
+import Algorithms from "./pages/Algorithms";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
 import ContactFab from "./components/ContactFab";
-import Internships from "./pages/Internships";
+import Experience from "./pages/Experience";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        {/* <Route path="/academics" element={<Academics />} /> */}
-        <Route path="/design" element={<Design />} />
         <Route path="/certifications" element={<Certifications />} />
-        <Route path="/collegeLife" element={<CollegeLife />} />
+        <Route path="/journey" element={<Journey />} />
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/dsa" element={<Dsa />} />
-        <Route path="/internships" element={<Internships />} />
+        <Route path="/algorithms" element={<Algorithms />} />
+        <Route path="/experience" element={<Experience />} />
       </Routes>
       <ContactFab />
       <Footer />

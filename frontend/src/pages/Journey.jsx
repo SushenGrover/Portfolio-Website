@@ -1,6 +1,6 @@
-// src/pages/CollegeLife.jsx
+// src/pages/Journey.jsx
 import React from "react";
-import { collegeIntro, semesters } from "../components/CollegeLifeData";
+import { collegeIntro, semesters } from "../components/JourneyData";
 
 // Reuse the given GradientCard implementation
 function GradientCard({ children }) {
@@ -59,11 +59,11 @@ function HtmlBlock({ html }) {
   );
 }
 
-export default function CollegeLife() {
+export default function Journey() {
   return (
     <section className="bg-gray-900 mx-auto px-5 py-12">
       <h2 className="text-3xl font-extrabold text-blue-500 mb-4">
-        College Life
+        Journey: Building Myself
       </h2>
 
       {/* Intro */}
@@ -110,9 +110,10 @@ export default function CollegeLife() {
                     </div>
                   </div>
 
-                  <p className="text-[16px] text-blue-200 leading-7 opacity-90 text-justify">
-                    {sem.paragraph}
-                  </p>
+                  <p
+                    className="text-[16px] text-blue-200 leading-7 opacity-90 text-justify"
+                    dangerouslySetInnerHTML={{ __html: sem.paragraph }}
+                  />
                 </div>
               </div>
             </div>

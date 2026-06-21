@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-// IMPORTANT: Replace with your actual LeetCode username
 const USERNAME = "SushenGrover";
 // Use environment variables for API base URL in a real application
 const API_BASE = "https://portfolio-website-rgpj.onrender.com";
@@ -93,7 +92,7 @@ function GradientCard({ children, title }) {
   );
 }
 
-export default function DSA() {
+export default function Algorithms() {
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState("");
   const [stats, setStats] = useState(null);

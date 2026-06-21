@@ -9,12 +9,11 @@ function Navbar() {
 
   const navItems = [
     { path: "/", label: "Home", color: "blue" },
-    { path: "/collegelife", label: "College Life", color: "blue" },
-    { path: "/internships", label: "Internships", color: "blue" },
+    { path: "/journey", label: "Journey", color: "blue" },
+    { path: "/experience", label: "Experience", color: "blue" },
     { path: "/projects", label: "Projects", color: "blue" },
     { path: "/certifications", label: "Certifications", color: "blue" },
-    { path: "/dsa", label: "CP", color: "blue" },
-    { path: "/design", label: "Design", color: "blue" },
+    { path: "/algorithms", label: "Algorithms", color: "blue" },
   ];
 
   return (
