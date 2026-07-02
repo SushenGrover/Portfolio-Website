@@ -10,7 +10,7 @@ export const experiences = [
     startDate: "May 2026",
     endDate: "Present",
     description:
-      "Working under <b>Dr. Janaki Meena</b> on the design and development of <b>HybridRAG architectures</b>, exploring advanced retrieval techniques including <b>GraphRAG, VectorRAG, reranking, query decomposition, and RAG fusion</b> to enhance knowledge retrieval and response generation.",
+      "Working under <b>Dr. Janaki Meena</b> on the design and development of <b>HybridRAG architectures</b>, exploring advanced retrieval techniques including <b>GraphRAG, VectorRAG, reranking, query decomposition, and RAG fusion</b> to enhance knowledge retrieval and response generation.<br />Evaluated system performance using the <b>RAGAS</b> framework across <b>Faithfulness, Answer Relevancy, Context Precision, and Context Recall</b> metrics.",
     skills: [
       "Python",
       "Neo4j",
@@ -33,7 +33,7 @@ export const experiences = [
     startDate: "May 2026",
     endDate: "Present",
     description:
-      "Building code implementations for questions featured in <b>national-level examinations</b>, enabling the creation of <b>accurate and scalable educational content</b> published on official website of CollegeDunia.",
+      "Built code implementations for questions featured in <b>national-level examinations</b>, enabling the creation of <b>accurate and scalable educational content</b> published on official website of CollegeDunia.<br />Leveraged <b>Python, regular expressions, prompt engineering, and web scraping</b> to improve data processing workflows.",
     skills: [
       "Python",
       "Regular Expression",
@@ -54,7 +54,7 @@ export const experiences = [
     startDate: "Jan 2026",
     endDate: "Apr 2026",
     description:
-      "Completed an internship at <b>BluMotiv</b>, contributing to the development of <b>fleet management software</b> for electrified industrial vehicles. Designed and implemented a <b>driver behavior classification model</b> to identify driving styles and evaluate their effects on fuel consumption and vehicle efficiency. Worked with real-world vehicle data to support data-driven decision-making and improve operational performance.",
+      "Completed an internship at <b>BluMotiv</b>, contributing to the development of <b>fleet management software</b> for electrified industrial vehicles.<br />Designed and implemented a <b>driver behavior classification model</b> to identify driving styles and evaluate their effects on fuel consumption and vehicle efficiency.<br />Worked with real-world vehicle data to support <b>data-driven decision-making and improve operational performance</b>.",
     skills: [
       "Software Development",
       "AI/ML",
@@ -76,7 +76,7 @@ export const experiences = [
     startDate: "Sep 2025",
     endDate: "Oct 2025",
     description:
-      "Completed a specialized virtual internship focused on '<b>Conversational Data Analysis with LLMs</b>' led by the Edunet Foundation. I utilized Python libraries like <b>Pandas, NumPy, and Seaborn</b> to perform end-to-end data analytics. Key achievements included analyzing genre trends in <b>Netflix content</b> and identifying pricing drivers for <b>Airbnb bookings</b>, transforming raw data into actionable insights.",
+      "Completed a specialized virtual internship focused on '<b>Conversational Data Analysis with LLMs</b>' led by the Edunet Foundation.<br />Utilized Python libraries like <b>Pandas, NumPy, and Seaborn</b> to perform end-to-end data analytics.<br />Key achievements included analyzing genre trends in <b>Netflix content</b> and identifying pricing drivers for <b>Airbnb bookings</b>, transforming raw data into actionable insights.",
     skills: ["Python", "Pandas", "LLMs", "Data Visualization", "Seaborn"],
     certificate: "/internship_images/vois_certificate.jpg",
   },

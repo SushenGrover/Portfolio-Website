@@ -1,6 +1,6 @@
 // frontend/src/components/Footer.jsx
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faEnvelope, faCode } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
@@ -42,6 +42,11 @@ export default function Footer() {
                 icon: faLinkedin,
                 label: "LinkedIn",
               },
+              {
+                href: "https://codolio.com/profile/SushenGrover",
+                icon: faCode,
+                label: "Codolio",
+              },
             ].map((item, i) => (
               <a
                 key={i}
@@ -51,7 +56,11 @@ export default function Footer() {
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-700 hover:bg-blue-600 transition-all duration-300 shadow-sm hover:shadow-[0_0_12px_rgba(59,130,246,0.6)]"
                 title={item.label}
               >
-                <FontAwesomeIcon icon={item.icon} className="text-lg" />
+                {item.customIcon ? (
+                  <item.customIcon className="w-5 h-5" />
+                ) : (
+                  <FontAwesomeIcon icon={item.icon} className="text-lg" />
+                )}
                 <span className="text-sm md:text-base">{item.label}</span>
               </a>
             ))}
