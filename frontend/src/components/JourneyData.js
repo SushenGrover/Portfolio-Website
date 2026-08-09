@@ -54,4 +54,12 @@ export const semesters = [
       "After the disaster of the previous semester, Semester 6 was about regaining momentum. I brought my GPA back above 9, proving to myself that consistency and hard work always pay off. Beyond academics, I completed my internship at <b>BluMotiv</b> and gained valuable industry experience. The placement season also brought exciting opportunities, as I advanced to the interview stage for <b>Microsoft's flagship Data Science role</b> and reached the technical interview round at <b>DocuSign</b> through an off-campus application. I also joined <b>Collegedunia</b> as a <b>Data Researcher Intern</b>, further strengthening my professional skills. This semester reminded me that setbacks are temporary, but persistence creates progress.",
     gpa: "9.27",
   },
+  {
+    id: 7,
+    title: "Semester 7: Placed",
+    img: "/journey_images/7.png",
+    paragraph:
+      "Semester 7 began with the start of placement season, and after everything that came before, this was the moment I had been preparing for. I cleared the screening, OA, two technical interviews, an HR round, and finally a CTO round to secure an <b>Application Engineer Intern + FTE</b> offer from <b>IDFC First Bank</b>. Along the way, I also reached the 2nd technical interview stage at <b>ValueLabs</b>. Also, I made it to the interview stage at <b>Infosys</b> twice - first through HackWithInfy's L3 role and later through the on-campus L1 role, with the result still awaited for both interviews. Getting placed feels like a huge milestone, especially after all the rejections, setbacks, and moments of doubt along the way.<br /><b>I have won the battle but not the War . . . .</b>",
+    gpa: "TBD",
+  },
 ];

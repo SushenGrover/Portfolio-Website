@@ -22,11 +22,11 @@ export default function Footer() {
           {/* Contact Buttons */}
           <div className="flex flex-wrap justify-center gap-4 text-white">
             {[
-              {
-                href: "tel:+917009367016",
-                icon: faPhone,
-                label: "+91 70093 67016",
-              },
+              // {
+              //   href: "tel:+917009367016",
+              //   icon: faPhone,
+              //   label: "+91 70093 67016",
+              // },
               {
                 href: "mailto:groversushen@gmail.com",
                 icon: faEnvelope,

@@ -5,7 +5,7 @@ export const certifications = [
     name: "AWS Certified Solutions Architect - Associate (SAA-C03)",
     org: "Amazon Web Services (AWS)",
     issueDate: "Jul 2026",
-    image: "/certification_images/AWS.png",
+    image: "/certification_images/AWS.jpg",
     verifyUrl:
       "https://www.credly.com/badges/ad9f4da2-857d-4697-aaec-71083d63e03a/linked_in_profile",
     description:
