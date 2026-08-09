@@ -59,7 +59,7 @@ export const semesters = [
     title: "Semester 7: Placed",
     img: "/journey_images/7.png",
     paragraph:
-      "Semester 7 began with the start of placement season, and after everything that came before, this was the moment I had been preparing for. I cleared the screening, OA, two technical interviews, an HR round, and finally a CTO round to secure an <b>Application Engineer Intern + FTE</b> offer from <b>IDFC First Bank</b>. Along the way, I also reached the 2nd technical interview stage at <b>ValueLabs</b>. Also, I made it to the interview stage at <b>Infosys</b> twice - first through HackWithInfy's L3 role and later through the on-campus L1 role, with the result still awaited for both interviews. Getting placed feels like a huge milestone, especially after all the rejections, setbacks, and moments of doubt along the way.<br /><b>I have won the battle but not the War . . . .</b>",
+      "Semester 7 began with the start of placement season, and after everything that came before, this was the moment I had been preparing for. I cleared the screening, OA, two technical interviews, an HR round, and finally a CTO round to secure an <b>Application Engineer Intern + FTE</b> offer from <b>IDFC First Bank</b>. Along the way, I also reached the 2nd technical interview stage at <b>ValueLabs</b>. Also, I made it to the interview stage at <b>Infosys</b> twice - first through HackWithInfy's L3 role and later through the on-campus L1 role, with the result still awaited for both interviews. Getting placed feels like a huge milestone, especially after all the rejections, setbacks, and moments of doubt along the way.<br /><b>I have won the battle but not the War....</b>",
     gpa: "TBD",
   },
 ];
