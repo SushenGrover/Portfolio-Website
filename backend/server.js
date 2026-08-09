@@ -2,16 +2,20 @@ const express = require("express");
 const cors = require("cors");
 const fetch = require("node-fetch");
 const { LeetCode } = require("leetcode-query");
+const fs = require("fs");
+const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 const HOST = process.env.HOST || "0.0.0.0";
+const frontendDistPath = path.join(__dirname, "../frontend/dist");
+const frontendIndexPath = path.join(frontendDistPath, "index.html");
 
 app.use(
   cors({
     // origin: "http://localhost:5173", // local testing URL
     origin: "https://sushengrover.onrender.com", // render frontend URL
-  })
+  }),
 );
 
 app.use(express.json());
@@ -100,6 +104,26 @@ app.get("/leetcode/:username", async (req, res) => {
     });
   }
 });
+
+if (fs.existsSync(frontendDistPath)) {
+  app.use(express.static(frontendDistPath));
+
+  app.use((req, res, next) => {
+    if (req.method !== "GET") {
+      return next();
+    }
+
+    if (req.path.startsWith("/leetcode")) {
+      return next();
+    }
+
+    res.sendFile(frontendIndexPath);
+  });
+} else {
+  console.warn(
+    "Frontend build not found. API routes will still work, but the SPA will not be served.",
+  );
+}
 
 app.listen(PORT, HOST, () => {
   console.log(`✅ Server running on http://${HOST}:${PORT}`);
