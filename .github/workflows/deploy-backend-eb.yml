@@ -36,6 +36,6 @@ jobs:
           environment_name: ${{ secrets.EB_ENV_NAME }}
           version_label: ${{ github.sha }}
           region: ${{ secrets.AWS_REGION }}
-          bucket_name: ${{ secrets.EB_S3_BUCKET }}
-          bucket_key: backend-deploy-${{ github.sha }}.zip
-          zip_file: backend-deploy.zip
+          existing_bucket_name: ${{ secrets.EB_S3_BUCKET }}
+          deployment_package: backend-deploy.zip
+          wait_for_deployment: true
