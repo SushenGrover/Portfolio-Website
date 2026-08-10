@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 const USERNAME = "SushenGrover";
-// Use environment variables for API base URL in a real application
-const API_BASE = "https://portfolio-website-rgpj.onrender.com";
-// const API_BASE = "http://localhost:5000";
+// Use Vite environment variable for API base URL (loaded from .env files)
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 
 import { motion } from "framer-motion";
 
@@ -125,16 +124,16 @@ export default function Algorithms() {
               }
               return acc;
             },
-            {}
+            {},
           );
 
           // Convert the map back to an array and sort by timestamp (newest first)
           const filteredRecent = Object.values(uniqueSubmissionsMap).sort(
-            (a, b) => b.timestamp - a.timestamp
+            (a, b) => b.timestamp - a.timestamp,
           );
 
           const sortedBadges = (data.badges || []).sort(
-            (a, b) => new Date(a.creationDate) - new Date(b.creationDate)
+            (a, b) => new Date(a.creationDate) - new Date(b.creationDate),
           );
 
           setStats(data.stats || null);
@@ -212,7 +211,7 @@ export default function Algorithms() {
                   <div>
                     <div className="text-2xl font-bold text-cyan-400">
                       {parseInt(
-                        (stats.totalSubmissions * 100) / stats.acceptanceRate
+                        (stats.totalSubmissions * 100) / stats.acceptanceRate,
                       )}
                     </div>
                     <div className="text-xs opacity-75 uppercase tracking-wider">
@@ -286,7 +285,7 @@ export default function Algorithms() {
                   <div
                     key={badge.id}
                     title={`${badge.name}\nEarned: ${new Date(
-                      badge.creationDate
+                      badge.creationDate,
                     ).toLocaleDateString()}`}
                     style={{
                       display: "flex",
@@ -320,7 +319,7 @@ export default function Algorithms() {
                         {
                           month: "short",
                           year: "numeric",
-                        }
+                        },
                       )}
                     </span>
                   </div>

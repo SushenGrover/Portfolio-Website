@@ -8,6 +8,7 @@ applications:
             - npm ci
         build:
           commands:
+            - test -f .env.aws && cp .env.aws .env || echo "No .env.aws found, using defaults"
             - npm run build
       artifacts:
         baseDirectory: dist
@@ -16,3 +17,7 @@ applications:
       cache:
         paths:
           - node_modules/**/*
+      envs:
+        # Set this env var at the Amplify Console under Build settings -> Environment variables
+        # to point to your AWS backend URL
+        VITE_API_BASE_URL: placeholder
