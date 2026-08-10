@@ -1,0 +1,41 @@
+name: Deploy Backend to Elastic Beanstalk
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "backend/**"
+
+jobs:
+  deploy-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install backend deps
+        run: npm ci
+        working-directory: backend
+
+      - name: Zip backend for EB
+        run: |
+          cd backend
+          zip -r ../backend-deploy.zip .
+
+      - name: Deploy to Elastic Beanstalk
+        uses: einaregilsson/beanstalk-deploy@v20
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: ${{ secrets.EB_APP_NAME }}
+          environment_name: ${{ secrets.EB_ENV_NAME }}
+          version_label: ${{ github.sha }}
+          region: ${{ secrets.AWS_REGION }}
+          bucket_name: ${{ secrets.EB_S3_BUCKET }}
+          bucket_key: backend-deploy-${{ github.sha }}.zip
+          zip_file: backend-deploy.zip
