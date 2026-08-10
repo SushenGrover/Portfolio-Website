@@ -19,6 +19,8 @@ if (fs.existsSync(envPath)) {
   dotenv.config();
 }
 
+
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 const HOST = process.env.HOST || "0.0.0.0";
