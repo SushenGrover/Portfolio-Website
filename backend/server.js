@@ -4,6 +4,20 @@ const fetch = require("node-fetch");
 const { LeetCode } = require("leetcode-query");
 const fs = require("fs");
 const path = require("path");
+const dotenv = require("dotenv");
+
+// Load environment variables from a specific env file if present.
+// Priority: process.env.ENV_FILE -> .env.<ENV_TARGET> -> .env
+const envFile =
+  process.env.ENV_FILE ||
+  (process.env.ENV_TARGET ? `.env.${process.env.ENV_TARGET}` : ".env");
+const envPath = path.resolve(__dirname, envFile);
+if (fs.existsSync(envPath)) {
+  dotenv.config({ path: envPath });
+  console.log(`Loaded environment variables from ${envPath}`);
+} else {
+  dotenv.config();
+}
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -11,10 +25,11 @@ const HOST = process.env.HOST || "0.0.0.0";
 const frontendDistPath = path.join(__dirname, "../frontend/dist");
 const frontendIndexPath = path.join(frontendDistPath, "index.html");
 
+const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:5173";
+
 app.use(
   cors({
-    // origin: "http://localhost:5173", // local testing URL
-    origin: "https://sushengrover.onrender.com", // render frontend URL
+    origin: FRONTEND_URL === "*" ? true : FRONTEND_URL,
   }),
 );
 
