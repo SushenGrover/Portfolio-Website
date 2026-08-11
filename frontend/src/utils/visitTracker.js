@@ -67,6 +67,7 @@ export async function getVisitCount() {
     return docSnap.exists() ? docSnap.data().count : 0;
   } catch (error) {
     // console.error("❌ Failed to get visit count:", error);
+    
     return 0;
   }
 }
