@@ -105,10 +105,11 @@ export default function Algorithms() {
     const fetchLeetCodeData = async () => {
       try {
         // Use fetchWithFallback to handle college WiFi that blocks custom domains
+        // Longer timeout for Render backend (free tier can be slow to wake up)
         const res = await fetchWithFallback(
           `${API_BASE}/leetcode/${USERNAME}`,
           `${API_FALLBACK}/leetcode/${USERNAME}`,
-          { timeout: 3000 },
+          { primaryTimeout: 4000, fallbackTimeout: 10000 },
         );
         if (!res.ok) throw new Error(`Backend HTTP ${res.status}`);
         const data = await res.json();

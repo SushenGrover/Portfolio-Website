@@ -3,12 +3,13 @@
  * Useful for college WiFi that blocks custom domains but allows direct IPs.
  */
 export async function fetchWithFallback(primaryUrl, fallbackUrl, options = {}) {
-  const timeoutMs = options.timeout || 3000; // 3 second timeout
+  const primaryTimeoutMs = options.primaryTimeout || 4000; // 4 second timeout for primary
+  const fallbackTimeoutMs = options.fallbackTimeout || 10000; // 10 second timeout for fallback (Render can be slow)
 
   try {
     // Try primary URL with timeout
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+    const timeoutId = setTimeout(() => controller.abort(), primaryTimeoutMs);
 
     try {
       const response = await fetch(primaryUrl, {
@@ -29,10 +30,25 @@ export async function fetchWithFallback(primaryUrl, fallbackUrl, options = {}) {
           `⚠️ Primary URL timeout (${primaryUrl}). Trying fallback: ${fallbackUrl}`,
         );
 
-        // Try fallback URL
-        const fallbackResponse = await fetch(fallbackUrl, options);
-        console.log(`✅ Successfully connected via fallback URL`);
-        return fallbackResponse;
+        // Try fallback URL with longer timeout
+        const fallbackController = new AbortController();
+        const fallbackTimeoutId = setTimeout(
+          () => fallbackController.abort(),
+          fallbackTimeoutMs,
+        );
+
+        try {
+          const fallbackResponse = await fetch(fallbackUrl, {
+            ...options,
+            signal: fallbackController.signal,
+          });
+          clearTimeout(fallbackTimeoutId);
+          console.log(`✅ Successfully connected via fallback URL`);
+          return fallbackResponse;
+        } catch (fallbackError) {
+          clearTimeout(fallbackTimeoutId);
+          throw fallbackError;
+        }
       }
 
       throw primaryError;
