@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { fetchWithFallback } from "../utils/fetchWithFallback";
+import { motion } from "framer-motion";
 
 const USERNAME = "SushenGrover";
 // Use Vite environment variable for API base URL (loaded from .env files)
 const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
-
-import { motion } from "framer-motion";
+// Fallback to direct Render URL if custom domain times out (for college WiFi compatibility)
+const API_FALLBACK = "https://portfolio-website-rgpj.onrender.com";
 
 const GlowSpinner = () => (
   <div className="flex items-center justify-center py-10">
@@ -102,7 +104,12 @@ export default function Algorithms() {
     let alive = true;
     const fetchLeetCodeData = async () => {
       try {
-        const res = await fetch(`${API_BASE}/leetcode/${USERNAME}`);
+        // Use fetchWithFallback to handle college WiFi that blocks custom domains
+        const res = await fetchWithFallback(
+          `${API_BASE}/leetcode/${USERNAME}`,
+          `${API_FALLBACK}/leetcode/${USERNAME}`,
+          { timeout: 3000 },
+        );
         if (!res.ok) throw new Error(`Backend HTTP ${res.status}`);
         const data = await res.json();
         console.log(data);
