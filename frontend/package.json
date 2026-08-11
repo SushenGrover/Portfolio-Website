@@ -15,6 +15,7 @@
     "@fortawesome/react-fontawesome": "^3.0.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
+    "firebase": "^12.17.1",
     "framer-motion": "^12.23.12",
     "leetcode-query": "^2.0.1",
     "node-fetch": "^3.3.2",

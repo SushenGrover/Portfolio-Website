@@ -2,9 +2,15 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import profilePhoto from "../assets/profile_photo.png";
+import { trackVisit } from "../utils/visitTracker";
 
 export default function Home() {
   const [showResume, setShowResume] = useState(false);
+
+  // Track visitor on page load
+  useEffect(() => {
+    trackVisit();
+  }, []);
 
   useEffect(() => {
     if (!showResume) return;
