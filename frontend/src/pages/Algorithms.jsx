@@ -181,7 +181,7 @@ export default function Algorithms() {
             <GlowSpinner />
             <div className="text-cyan-200/90">Fetching LeetCode profile…</div>
             <div className="text-slate-300/80 text-sm">
-              May take longer than usual ~5-20 seconds
+              May not work with VIT Wifi. Coz they have blocked render domains :(
             </div>
           </div>
         </GradientCard>
