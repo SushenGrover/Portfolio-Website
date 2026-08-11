@@ -20,7 +20,7 @@ async function getVisitorIP() {
     const data = await response.json();
     return data.ip || "unknown";
   } catch (error) {
-    console.warn("⚠️ Could not fetch IP:", error);
+    console.warn(error);
     return "unknown";
   }
 }
@@ -52,9 +52,9 @@ export async function trackVisit() {
     const dailyRef = doc(db, "visits_daily", today);
     await setDoc(dailyRef, { count: increment(1) }, { merge: true });
 
-    console.log(`✅ Visit tracked: ${today} | IP: ${ip}`);
+    // console.log(`✅ Visit tracked: ${today} | IP: ${ip}`);
   } catch (error) {
-    console.error("❌ Visit tracking failed:", error);
+    // console.error("❌ Visit tracking failed:", error);
   }
 }
 
@@ -66,7 +66,7 @@ export async function getVisitCount() {
     const docSnap = await getDoc(dailyRef);
     return docSnap.exists() ? docSnap.data().count : 0;
   } catch (error) {
-    console.error("❌ Failed to get visit count:", error);
+    // console.error("❌ Failed to get visit count:", error);
     return 0;
   }
 }
