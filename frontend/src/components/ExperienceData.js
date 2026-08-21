@@ -3,12 +3,12 @@
 export const experiences = [
   {
     id: 1,
-    role: "Research Intern",
-    company: "VIT University",
+    role: "Summer Research Intern",
+    company: "VIT University (SRIP)",
     companyLogo: "/internship_images/vit_logo.png",
-    location: "Remote",
+    location: "Chennai, Tamil Nadu",
     startDate: "May 2026",
-    endDate: "Present",
+    endDate: "Jul 2026",
     description:
       "Working under <b>Dr. Janaki Meena</b> on the design and development of <b>HybridRAG architectures</b>, exploring advanced retrieval techniques including <b>GraphRAG, VectorRAG, reranking, query decomposition, and RAG fusion</b> to enhance knowledge retrieval and response generation.<br />Evaluated system performance using the <b>RAGAS</b> framework across <b>Faithfulness, Answer Relevancy, Context Precision, and Context Recall</b> metrics.",
     skills: [
@@ -22,7 +22,7 @@ export const experiences = [
       "Ragas",
       "Cross Encoder",
     ],
-    certificate: "",
+    certificate: "internship_images/SRIP_certificate.jpg",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const experiences = [
     companyLogo: "/internship_images/collegedunia_logo.png",
     location: "Remote",
     startDate: "May 2026",
-    endDate: "Present",
+    endDate: "Jun 2026",
     description:
       "Built code implementations for questions featured in <b>national-level examinations</b>, enabling the creation of <b>accurate and scalable educational content</b> published on official website of CollegeDunia.<br />Leveraged <b>Python, regular expressions, prompt engineering, and web scraping</b> to improve data processing workflows.",
     skills: [
@@ -43,7 +43,7 @@ export const experiences = [
       "Web Scraping",
       "Data Engineering",
     ],
-    certificate: "",
+    certificate: "internship_images/collegedunia_certificate.jpg",
   },
   {
     id: 4,

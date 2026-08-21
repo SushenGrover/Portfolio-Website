@@ -177,7 +177,7 @@ export default function Home() {
                       <span className="text-cyan-400">— PDF Preview</span>
                     </h3>
                     <a
-                      href="https://sushengrover.onrender.com/SushenGrover_Resume.pdf"
+                      href="https://sushengrover.in/SushenGrover_Resume.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mr-7 bg-cyan-600 hover:bg-cyan-500 text-white text-sm font-semibold py-2 px-4 rounded-lg"

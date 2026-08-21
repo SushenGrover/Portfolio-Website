@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faCode } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
+  faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -22,11 +23,11 @@ export default function Footer() {
           {/* Contact Buttons */}
           <div className="flex flex-wrap justify-center gap-4 text-white">
             {[
-              // {
-              //   href: "tel:+917009367016",
-              //   icon: faPhone,
-              //   label: "+91 70093 67016",
-              // },
+              {
+                href: "tel:+917009367016",
+                icon: faPhone,
+                label: "+91 70093 67016",
+              },
               {
                 href: "mailto:groversushen@gmail.com",
                 icon: faEnvelope,
@@ -42,6 +43,11 @@ export default function Footer() {
                 icon: faLinkedin,
                 label: "LinkedIn",
               },
+              // {
+              //   href: "https://www.instagram.com/sushen.grover/",
+              //   icon: faInstagram,
+              //   label: "Instagram",
+              // },
               {
                 href: "https://codolio.com/profile/SushenGrover",
                 icon: faCode,
