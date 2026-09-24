@@ -25,7 +25,7 @@ export const semesters = [
   {
     id: 3,
     title: "Semester 3: Intensity & Growth",
-    img: "/journey_images/3.jpg",
+    img: "/journey_images/3.jpeg",
     paragraph:
       "The pace picked up dramatically in the third semester. With challenging subjects like <b>Microprocessors, Java, DSA, and Computer Architecture</b>, paired with a packed schedule of classes, labs, and club activities, every day tested my endurance. But programming remained my anchor-it gave me stability and confidence. This was also the semester of my <b>first hackathon</b>, where I experienced the thrill of competing and the joy of finishing as runners-up. That moment proved that perseverance and curiosity could open doors I never expected.",
     gpa: "9.51",
